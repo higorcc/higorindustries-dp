@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title> Higor Industries DP - Home </title>
+	<link rel="stylesheet" type="text/css" href="Assets/css/index.css">	
+</head>
+
+<body>
+
+	<header>
+
+		<h3> HIGOR INDUSTRIES</h3>
+		<h4> Departamento Pessoal </h4>
+
+		<nav>
+			<a href="#fgts"> FGTS </a>
+			
+			<a href="#ferias"> FÉRIAS </a>
+			<a href="#decimo"> DÉCIMO </a>
+			
+		</nav>	
+		<nav>
+		<a href="adm.html"> Área Administrativa</a>
+		</nav>
+
+	</header>
+	
+
+	<!--
+	<div class="inscrever">
+		<h5>Inscreva-se agora mesmo!</h5>
+		<button>INSCREVER-SE</button>
+
+	</div>
+	-->
+
+	<br><br>
+
+	<section class="container"> 	
+		<h1>HIGOR INDUSTRIES</h1>
+		<br><br>
+		<h2>SISTEMA WEB - DEPARTAMENTO PESSOAL</h2>
+		<p>Olá!</p>
+		<p>Vamos falar um pouco sobre o conteúdo a seguir.</p>
+		<p>Nesta página vamos abordar um exemplo de site com as tecnologias HTML, CSS e JavaScript.</p>
+		<p>O intuito da página é abordar com exemplos práticos o desenvolvimento de uma aplicação Web com as citadas tecnologias e não trabalhar de fato com departamento pessoal e áreas afins.</p>
+		<p>Em resumo essa página foi criada apenas a título de exemplo para alunos de cursos de desenvolvimento de sites e não deverá ser considerada como base para qualquer tipo de cálculo trabalhista.</p><br>	
+	</section>
+
+	<a href="#" id="fgts"></a>
+	<br><br>
+
+	
+	<section class="container"> 	
+		<h2>FGTS</h2>
+		<p>O que é: O FGTS é uma poupança aberta pela empresa em nome do trabalhador que funciona como uma garantia para protegê-lo em caso de demissão sem justa causa.</p> 
+		<p>Os valores do FGTS pertencem exclusivamente ao trabalhador e, em algumas situações especiais, pode ser sacado sem que o trabalhador tenha deixado o emprego.</p>
+		<h2>Cálculo</h2>
+		<br>
+		<label for="salario">Salário</label><br>
+		<input type="number" id="salario" placeholder="Insira o salário">
+		<br>
+		<label for="tempo">Tempo trabalhado (em meses)</label><br>
+		<input type="number" id="tempo" placeholder="Insira o número de meses">
+		<br>
+		<button onclick="calcularFgts()">Calcular</button>
+		<p>O valor aproximado de FGTS no período é de R$ <span></p>
+
+		<script type="text/javascript">
+
+			let salario = document.querySelector('#salario');
+			let tempo = document.querySelector('#tempo');
+			let resultado = document.querySelector('span');
+
+			function calcularFgts() {
+			
+				resultado.innerHTML = parseFloat(salario.value/100*8).toFixed(2)*tempo.value;
+			}
+
+
+		</script>
+
+	</section>
+
+	<a href="#" id="ferias"></a>
+	<br><br>
+
+	
+	<section class="container"> 	
+		<h2>Férias</h2>
+		<p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+		<p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>	
+		<br>
+		<a href="ferias.html" class="link">Clique aqui para calcular férias</a>
+		<br><br><br>
+	</section>
+
+	<a href="#" id="decimo"></a>
+	<br><br>
+
+	
+	<section class="container"> 	
+		<h2>Décimo</h2>
+		<p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
+		<p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
+		<br>
+		<a href="decimo.html" class="link">Clique aqui para calcular o décimo terceiro</a>
+		<br><br><br>
+	</section>
+
+	<br><br>
+
+	<section class="container" id="grid-container">
+
+		<h3>Clique para saber mais</h3>
+
+		<div class="grid">
+
+		<div>
+			<h2>FGTS</h2><br>
+			<a href="#fgts"><img src="img/fgts.png" alt="Imagem FGTS"></a>
+		</div>
+
+		<div>
+			<h2>FÉRIAS</h2><br>
+			<a href="ferias.html"><img src="img/ferias.png" alt="Imagem férias"></a>
+		</div>
+
+		<div>
+			<h2>DÉCIMO</h2><br>
+			<a href="decimo.html"><img src="img/decimo.png" alt="Imagem décimo"></a>
+		</div>
+
+		<div>
+			<h2>INVESTIMENTOS</h2><br>
+			<a href="https://www.santander.com.br/investimentos-para-voce" target="_blank"><img src="img/investimentos.png" alt="Imagem investimentos"></a>
+		</div>
+
+		<div>
+			<h2>RENDA EXTRA</h2><br>
+			<a href="https://www.santander.com.br/blog/dez-maneiras-de-melhorar-sua-renda" target="_blank"><img src="img/renda-extra.png" alt="Imagem renda extra"></a>
+		</div>
+		
+		<div>
+			<h2>EDUCAÇÃO FINENCEIRA</h2><br>
+			<a href="https://www.santander.com.br/blog/educacao-financeira" target="_blank"><img src="img/servicos.png" alt="Imagem serviços"></a>
+		</div>
+
+		</div>
+
+	</section>
+
+	<!--
+	<section class="container" id="formulario">
+		
+		<h2 class="formulario-contato"> Selecione o(s) produto(s) para mais informações </h2>
+
+		<form action="#" method="get" target="_blank">
+
+			<p class="formulario-contato">
+				
+				<label for="nome"><b> Nome </b></label><br> 
+				<input class="caixa-dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu nome">
+				<br>
+
+				<label for="contato"><b> Contato </b></label><br> 
+				<input class="caixa-dados-formulario" type="tel" id="tel" name="tel" placeholder="Insira seu Whatsapp">
+			</p>
+
+			<p class="formulario-contato">
+				
+				<input type="checkbox" id="html" name="html" value="Curso de html">
+				<label for="html"> Quero saber mais sobre o curso de HTML  </label><br>
+
+				<input type="checkbox" id="css" name="css" value="Curso de css">
+				<label for="css"> Quero saber mais sobre o curso de CSS  </label><br>
+				
+				<input type="checkbox" id="javascript" name="javascript" value="Curso de javascript">
+				<label for="javascript"> Quero saber mais sobre o curso de Javascript  </label>
+	
+			</p>
+
+			<p class="formulario-contato">
+				
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpar">
+
+			</p>
+		</form>
+
+
+	</section>
+	-->
+
+	<br><br>	
+
+	<footer>
+		<h3> HIGOR INDUSTRIES </h3>
+		<br>
+		<p class="text-footer"><u> Contatos </u></p>
+		<p class="text-footer"> Email: higorccruz@gmail.com </p>
+
+	</footer>
+
+	<script src="./Assets/js/index.js"></script>
+</body>
+
+
+</html>
