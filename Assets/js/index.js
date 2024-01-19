@@ -9,5 +9,9 @@ let userLogado = JSON.parse(localStorage.getItem('userLogado')) ;
 function sair(){
     localStorage.removeItem('token');
     localStorage.removeItem('userLogado');
-    window.location.href = 'Assets/html/signin.html';
+    
+    setTimeout(()=> {
+        window.location.href = "/Assets/html/signin.html"
+       }, 1000) 
 }
+

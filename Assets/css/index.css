@@ -144,12 +144,12 @@ input{
 }
 nav{
 	text-align: right;
-	margin-top: 10px;
+	margin-top: 5px;
 	font-weight: bold;
 	font-family: arial;
 	font-size: 1.6rem;
 	margin-right: 2%;
-	word-spacing: 5px;
+	word-spacing: 5px;	
 }
 .acesso-adm{
 	text-align: end;
@@ -191,3 +191,22 @@ img:hover{
 	border: solid #2E8B57;
 	border-radius: 10px;
 }
+.col-wrapper {
+	display: flex;
+	width: 99%;
+
+  }
+  
+  .col {
+	width: 50%;
+	;
+  }
+.sair{
+	text-align: right;
+}
+.sair:hover{
+	color: #C0C0C0;
+	transition: all 300ms ease-in-out;
+	cursor: pointer;
+}
+
