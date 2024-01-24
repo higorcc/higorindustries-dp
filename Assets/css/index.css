@@ -18,6 +18,13 @@ header{
 	text-shadow: 1px 1px 1px #000;
 	}
 
+.boas-vindas{
+	font-size: 2.0rem;
+	font-weight: bold;
+	margin-left: 3%;
+	margin-bottom: 5px;
+}
+
 h2{
 	font-family: arial;
 	text-align: left;
@@ -113,7 +120,7 @@ button{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 1px;
-	max-width: 90%;
+	max-width: 100%;
 	margin: 0auto;
 }
 .grid div{
@@ -194,13 +201,12 @@ img:hover{
 .col-wrapper {
 	display: flex;
 	width: 99%;
-
   }
-  
-  .col {
+.col {
 	width: 50%;
-	;
-  }
+
+}
+
 .sair{
 	text-align: right;
 }

@@ -3,8 +3,12 @@ if(localStorage.getItem('token') == null){
     window.location.href = './Assets/html/signin.html';
 } 
 
-
+let msgBoasVindas = document.querySelector('#boas-vindas')
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) ;
+let nomeUsuario = userLogado['nome'];
+
+msgBoasVindas.innerHTML = "Olá, " + nomeUsuario[0].toUpperCase() + nomeUsuario.substring(1);
+
 
 function sair(){
     localStorage.removeItem('token');
