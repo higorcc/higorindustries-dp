@@ -11,7 +11,7 @@ function sair(){
     localStorage.removeItem('userLogado');
     
     setTimeout(()=> {
-        window.location.href = "/Assets/html/signin.html"
+        window.location.href = "./Assets/html/signin.html"
        }, 1000) 
 }
 
